@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Add your custom CSS styles here */
+    </style>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <!-- <a href="#home" class="logo"> <img src="./asserts/Ittehad.logo.png" alt="" srcset=""></a> -->
+        <a href="index.html" class="active">Home</a>
+        <a href="flight.html">Flight</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Umrah
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Visa</a>
+                <a href="#">About</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Visa
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">World Tours
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <ul class="nav nav-tabs" id="flightMyTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="flightRoundTrip-tab" data-bs-toggle="tab"
+                    data-bs-target="#flightRoundTrip" type="button" role="tab" aria-controls="flightRoundTrip"
+                    aria-selected="true">Round Trip</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="flightOneWay-tab" data-bs-toggle="tab" data-bs-target="#flightOneWay"
+                    type="button" role="tab" aria-controls="flightOneWay" aria-selected="false">One Way</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="flightMultiDestination-tab" data-bs-toggle="tab"
+                    data-bs-target="#flightMultiDestination" type="button" role="tab"
+                    aria-controls="flightMultiDestination" aria-selected="false">Multi Destination</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="flightMyTabContent">
+            <div class="tab-pane fade show active" id="flightRoundTrip" role="tabpanel"
+                aria-labelledby="flightRoundTrip-tab">
+                <!-- Content for Round Trip tab -->
+                <h1>Round Trip Content</h1>
+                <form action="" class="form">
+                    <div class="flight_main">
+                        <div class="inner_sec">
+                            <label for="fname">First name:</label><br>
+                            <input type="text" id="fname" name="fname" value="John">
+                        </div>
+                        <div class="inner_sec form_icon">
+                            <img src="./asserts/1011551.png" height="30" width="30" alt="" srcset="">
+                        </div>
+                        <div class="inner_sec">
+                            <label for="lname">Last name:</label><br>
+                            <input type="text" id="lname" name="lname" value="Doe">
+                        </div>
+                        <div class="inner_sec">
+                            <label for="Departing">Departing</label><br>
+                            <input type="datetime-local" name="Departing" id="">
+                        </div>
+                        <div class="inner_sec">
+                            <label for="Returning">Returning</label><br>
+                            <input type="datetime-local" name="Returning" id="">
+                        </div>
+                        <div class="inner_sec">
+                            <label for="Adults">Adults (11+)</label><br>
+                            <select id="Adults" name="Adults">
+                                <option value="1">Adult 1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="inner_sec">
+                            <label for="Child">Child (2-10)</label><br>
+                            <select id="Child" name="Child">
+                                <option value="1">Child 1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="inner_sec">
+                            <label for="Infant">Infant (0-2)</label><br>
+                            <select id="Infant" name="Infant">
+                                <option value="1">Infant 1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="flight_phone">
+                        <div class="cell_no">
+                            <label for="countryCode" class="form-label">Country Code</label>
+                            <select class="form-select" id="countryCode" aria-label="Country Code">
+                                <option selected>Select Country Code</option>
+                                <option value="+1">+1 (USA)</option>
+                                <option value="+91">+91 (India)</option>
+                                <option value="+44">+44 (UK)</option>
+                                <!-- Add more country codes as needed -->
+                            </select>
+                        </div>
+                        <div class="cell_no">
+                            <label for="phoneNumber" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter phone number"
+                                required>
+                        </div>
+                    </div>
+
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="tab-pane fade" id="flightOneWay" role="tabpanel" aria-labelledby="flightOneWay-tab">
+                <!-- Content for One Way tab -->
+                <h1>One Way Content</h1>
+                <form action="" class="form">
+                    <div class="flight_main">
+                        <div class="inner_sec">
+                            <label for="fname">First name:</label><br>
+                            <input type="text" id="fname" name="fname" value="John">
+                        </div>
+                        <div class="inner_sec form_icon">
+                            <img src="../asserts/1011551.png" height="30" width="30" alt="" srcset="">
+                        </div>
+                        <div class="inner_sec">
+                            <label for="lname">Last name:</label><br>
+                            <input type="text" id="lname" name="lname" value="Doe">
+                        </div>
+                        <div class="inner_sec">
+                            <label for="Departing">Departing</label><br>
+                            <input type="datetime-local" name="Departing" id="">
+                        </div>
+                        <div class="inner_sec" id="returningDate">
+                            <label for="Returning">Returning</label><br>
+                            <input type="datetime-local" name="Returning">
+                        </div>
+                        <div class="inner_sec">
+                            <label for="Adults">Adults (11+)</label><br>
+                            <select id="Adults" name="Adults">
+                                <option value="1">Adult 1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="inner_sec">
+                            <label for="Child">Child (2-10)</label><br>
+                            <select id="Child" name="Child">
+                                <option value="1">Child 1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="inner_sec">
+                            <label for="Infant">Infant (0-2)</label><br>
+                            <select id="Infant" name="Infant">
+                                <option value="1">Infant 1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="flight_phone">
+                        <div class="cell_no">
+                            <label for="countryCode" class="form-label">Country Code</label>
+                            <select class="form-select" id="countryCode" aria-label="Country Code">
+                                <option selected>Select Country Code</option>
+                                <option value="+1">+1 (USA)</option>
+                                <option value="+91">+91 (India)</option>
+                                <option value="+44">+44 (UK)</option>
+                                <!-- Add more country codes as needed -->
+                            </select>
+                        </div>
+                        <div class="cell_no">
+                            <label for="phoneNumber" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter phone number"
+                                required>
+                        </div>
+                    </div>
+
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="tab-pane fade" id="flightMultiDestination" role="tabpanel"
+                aria-labelledby="flightMultiDestination-tab">
+                <!-- Content for Multi Destination tab -->
+                <h1>Multi Destination Content</h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPX9o7PhW8g9xF1ePpE=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#flightOneWay-tab').click(function () {
+                $('#returningDate').prop('disabled', true);
+            });
+
+            $('#flightRoundTrip-tab').click(function () {
+                $('#flightOneWay input[name="Returning"]').prop('disabled', false);
+            });
+        });
+
+    </script>
+</body>
+
+</html>
